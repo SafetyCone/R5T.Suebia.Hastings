@@ -10,19 +10,19 @@ namespace R5T.Suebia.Hastings
 {
     public class MachineLocationAwareSecretsDirectoryPathProvider : ISecretsDirectoryPathProvider
     {
-        private IMachineLocationProvider MachineLocationProvider { get; }
         private IExecutableFileDirectoryPathProvider ExecutableFileDirectoryPathProvider { get; }
-        private AlamaniaSecretsDirectoryPathProvider AlamaniaSecretsDirectoryPathProvider { get; }
+        private IMachineLocationProvider MachineLocationProvider { get; }
+        private IRivetOrganizationSecretsDirectoryPathProvider RivetOrganizationSecretsDirectoryPathProvider { get; }
 
 
         public MachineLocationAwareSecretsDirectoryPathProvider(
-            IMachineLocationProvider machineLocationProvider,
             IExecutableFileDirectoryPathProvider executableFileDirectoryPathProvider,
-            AlamaniaSecretsDirectoryPathProvider alamaniaSecretsDirectoryPathProvider)
+            IMachineLocationProvider machineLocationProvider,
+            IRivetOrganizationSecretsDirectoryPathProvider rivetOrganizationSecretsDirectoryPathProvider)
         {
-            this.MachineLocationProvider = machineLocationProvider;
             this.ExecutableFileDirectoryPathProvider = executableFileDirectoryPathProvider;
-            this.AlamaniaSecretsDirectoryPathProvider = alamaniaSecretsDirectoryPathProvider;
+            this.MachineLocationProvider = machineLocationProvider;
+            this.RivetOrganizationSecretsDirectoryPathProvider = rivetOrganizationSecretsDirectoryPathProvider;
         }
 
         public string GetSecretsDirectoryPath()
@@ -52,7 +52,7 @@ namespace R5T.Suebia.Hastings
         /// </summary>
         private string GetLocalMachineLocationSecretsDirectoryPath()
         {
-            string rivetDataSecretsDirectoryPath = this.AlamaniaSecretsDirectoryPathProvider.GetSecretsDirectoryPath();
+            string rivetDataSecretsDirectoryPath = this.RivetOrganizationSecretsDirectoryPathProvider.GetSecretsDirectoryPath();
 
             var secretsDirectoryPath = rivetDataSecretsDirectoryPath;
             return secretsDirectoryPath;
