@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Lombardy.Base", "..\..\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Ostrogothia", "..\..\R5T.Ostrogothia\source\R5T.Ostrogothia\R5T.Ostrogothia.csproj", "{9B5781D9-1B32-42EE-A49C-B238A995F652}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Magyar", "..\..\R5T.Magyar\source\R5T.Magyar\R5T.Magyar.csproj", "{F8F4156D-3D75-42E8-A5A2-70BD53446CC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -197,6 +199,18 @@ Global
 		{9B5781D9-1B32-42EE-A49C-B238A995F652}.Release|x64.Build.0 = Release|Any CPU
 		{9B5781D9-1B32-42EE-A49C-B238A995F652}.Release|x86.ActiveCfg = Release|Any CPU
 		{9B5781D9-1B32-42EE-A49C-B238A995F652}.Release|x86.Build.0 = Release|Any CPU
+		{F8F4156D-3D75-42E8-A5A2-70BD53446CC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F4156D-3D75-42E8-A5A2-70BD53446CC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F4156D-3D75-42E8-A5A2-70BD53446CC5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F8F4156D-3D75-42E8-A5A2-70BD53446CC5}.Debug|x64.Build.0 = Debug|Any CPU
+		{F8F4156D-3D75-42E8-A5A2-70BD53446CC5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F8F4156D-3D75-42E8-A5A2-70BD53446CC5}.Debug|x86.Build.0 = Debug|Any CPU
+		{F8F4156D-3D75-42E8-A5A2-70BD53446CC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F4156D-3D75-42E8-A5A2-70BD53446CC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F4156D-3D75-42E8-A5A2-70BD53446CC5}.Release|x64.ActiveCfg = Release|Any CPU
+		{F8F4156D-3D75-42E8-A5A2-70BD53446CC5}.Release|x64.Build.0 = Release|Any CPU
+		{F8F4156D-3D75-42E8-A5A2-70BD53446CC5}.Release|x86.ActiveCfg = Release|Any CPU
+		{F8F4156D-3D75-42E8-A5A2-70BD53446CC5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -212,6 +226,7 @@ Global
 		{225B491B-0467-497D-90D4-B56CC9CF8336} = {CFB9F8FA-0A58-4C72-B1ED-AC331BC5584F}
 		{AB463280-C4D4-498E-AD34-D1907309997A} = {CFB9F8FA-0A58-4C72-B1ED-AC331BC5584F}
 		{9B5781D9-1B32-42EE-A49C-B238A995F652} = {CFB9F8FA-0A58-4C72-B1ED-AC331BC5584F}
+		{F8F4156D-3D75-42E8-A5A2-70BD53446CC5} = {CFB9F8FA-0A58-4C72-B1ED-AC331BC5584F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B66976AE-E449-450B-8866-76850B743F10}
