@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 
 using R5T.Suebia.Alamania;
 using R5T.Brighton;
 using R5T.Hastings;
-using R5T.Macommania;
+using R5T.Macommania;using R5T.T0064;
 
 
 namespace R5T.Suebia.Hastings
-{
-    public class MachineLocationAwareSecretsDirectoryPathProvider : ISecretsDirectoryPathProvider
+{[ServiceImplementationMarker]
+    public class MachineLocationAwareSecretsDirectoryPathProvider : ISecretsDirectoryPathProvider,IServiceImplementation
     {
         private IExecutableFileDirectoryPathProvider ExecutableFileDirectoryPathProvider { get; }
         private IMachineLocationProvider MachineLocationProvider { get; }
